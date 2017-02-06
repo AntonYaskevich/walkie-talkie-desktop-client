@@ -2,7 +2,8 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    entry: './src/renderer/index.js',
+    context: path.resolve(__dirname, 'src'),
+    entry: './renderer/index.js',
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: 'bundle.js',
